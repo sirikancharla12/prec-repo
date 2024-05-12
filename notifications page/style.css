@@ -1,0 +1,164 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.outer{
+    width: 40vw;
+    height:90vh;
+    background-color: white;
+    
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid white;
+    position: relative;
+}
+.nav{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px  30px;
+    width:90%;
+   height: 5%;
+}
+.notify{
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    
+   
+}
+.part1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.mark{
+    color: rgb(121, 120, 120);
+    background-color: white;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+.mark button{
+    border: none;
+    background-color: white;
+}
+
+#number{
+width: 25px;
+height: 25px;
+background-color: rgb(106, 162, 247);
+color: white;
+font-weight: 700;
+margin: 10px ;
+padding: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+border-radius: 50px;
+}
+.image{
+    width:60px ;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 40px;
+    height: 40px;
+}
+.m1{
+    display: flex;
+    justify-content: flex-start;
+    border: 2px ;
+    background-color: rgb(230, 241, 255); ;
+    border-radius: 10px ;
+    align-items: center;
+   height: 10vh;
+}
+#dot{
+height: 7px;
+width: 7px;
+background-color: rgb(231, 95, 117);
+border-radius: 20px;
+margin: 3px;
+}
+.maincont{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    margin: 20px  30px;
+    width:90%;
+    height: 80%; 
+}
+.maincont::-webkit-scrollbar{
+    display: none;
+}
+.m1{
+    margin: 3px;
+    
+}
+.matter{
+    font-size: small;
+}
+.cont1{
+   
+    overflow: hidden; 
+    text-overflow: ellipsis;
+  
+
+    margin-bottom: 5px;
+    display: flex;
+}
+.dot{
+    margin: 20px;
+    display: block;
+}
+.cont2{
+    color: grey;
+}
+.activity{
+    font-weight: 800;
+    margin: 0.2rem;
+}
+#reply{
+    width:80%;
+    height: 80%;
+    margin-top: 3px;
+    margin-left: 70px;
+    color: rgb(133, 134, 136);
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    padding: 10px;
+    
+  
+}
+.position-relative{
+    position: relative;
+}
+.read{
+    
+    background-color: white;
+}
+.hidden{
+    display: none;
+}
+.clearall button{
+    
+    border: none;
+    background-color: white;
+}

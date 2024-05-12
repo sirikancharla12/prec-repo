@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    
+ 
+body{
+    /* background: radial-gradient(circle,rgb(51, 51, 150) ,rgb(0, 0, 87));
+     */
+     background: radial-gradient(circle,rgb(1, 1, 65) ,rgb(0, 0, 27));
+
+color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section{
+    display: flex;
+    width: 100%;
+    height: 95vh;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    
+}
+.firstbox{
+width: 40vw;
+height: 20vh;
+border: 5px solid rgb(92, 92, 189) ;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.game{
+    margin: 20px;
+    padding: 2px;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.scorecount{
+    
+    /* height: 12vh;
+    width: 70px; */
+    /* background-color: white; */
+    border-radius: 10px;
+    /* text-align: center; */
+    margin: 20px;
+    padding: 10px;
+    
+}
+.rules{
+    width: 40vw;
+height: 90vh;
+border: 5px solid rgb(92, 92, 189) ;
+border-radius:20px ;
+margin: 20px;
+padding: 5px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.rules li{
+    padding: 2px;
+}
+h2{
+    color: white;
+    margin-left: 5px;
+    font-weight: 500;
+}
+.rule1{
+    color: rgb(190, 190, 190);
+    justify-content:flex-start ;
+}
+.rule2{
+    color: rgb(190, 190, 190);
+}
+.logo img{
+    background-color:inherit ;
+}
+.rulehead{
+margin: 5px;
+}
+.btnnhead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    color: white;
+    background-color: inherit;
+    border-radius: 5px;
+    border: 3px solid rgb(92, 92, 189);
+    padding: 5px;
+    margin: 3px;
+
+}
+a{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+
+}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="firstbox">
+            <div class="game">
+                ROCK <br>
+                PAPER <br>
+                SCISSORS
+            </div>
+            <div class="scorecount">
+                <div class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6729/6729699.png" alt="" width="80px" height="80px">
+                </div>
+                <!-- <div id="count">12</div> -->
+            </div>
+        </div>
+
+        <div class="rules"> 
+            
+            <div class="rule1">
+                <div class="btnnhead"><h2>RULES</h2> <button><a href="http://127.0.0.1:3000/page1.html">PLAY GAME</a> </button></div>
+            
+
+               <div class="rulehead">The rules are very simple and probably you remember them from your childhood:</div> 
+                <li>   If you choose Rock, you will win against Scissors but lose against Paper.</li>
+                <li>If you choose Scissors, you will win against Paper but lose against Rock.</li>
+                <li>If you choose Paper, you will win against Rock but lose against Scissors.</li>
+             
+                
+                
+            </div>
+<div class="rule2">           <h2> Good advice</h2>
+    <div class="rulehead"><p>If you want to win, you need to be a good psychologist to predict the next choice of your opponent. There are many strategies and different people have different patterns of behavior.
+    
+        But if you follow this advice you will win in most cases. If your last choice was...</p></div>
+        <li>... Rock, then choose Scissors in the next round</li>
+        <li>  ... Scissors, then choose Paper in the next round</li>
+        <li>... Paper, then choose Rock in the next round</li>
+    
+  
+    </div>
+
+        </div>
+        
+    </section>
+    
+        
+</body>
+</html>

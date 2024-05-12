@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications page</title>
+    <style>* {
+        font-family: sans-serif;
+    }
+    
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .outer {
+        width: 40vw;
+        height: 90vh;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 2px solid black;
+        position: relative;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 30px;
+        width: 90%;
+        height: 5%;
+    }
+    
+    .notify {
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    .part1 {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    #number {
+        width: 25px;
+        height: 25px;
+        background-color: rgb(17, 17, 238);
+        color: white;
+        margin: 10px;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+    }
+    
+    .image {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .m1 {
+        display: flex;
+        justify-content: flex-start;
+        border: 2px;
+        background-color: rgb(216, 234, 255);
+        border-radius: 10px;
+        align-items: center;
+        height: 10vh;
+    }
+    
+    .dot {
+        height: 7px;
+        width: 7px;
+        background-color: rgb(231, 95, 117);
+        border-radius: 20px;
+        margin: 3px;
+    }
+    
+    .maincont {
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 30px;
+        width: 90%;
+        height: 80%;
+    }
+    
+    .maincont::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .m1 {
+        margin: 3px;
+    }
+    
+    .matter {
+        font-size: small;
+    }
+    
+    .cont1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 5px;
+        display: flex;
+    }
+    
+    .cont2 {
+        color: grey;
+    }
+    
+    .mark {
+        margin-right: 30px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <script>function markAllAsRead() {
+        var count = document.getElementById("number");
+        count.textContent = "0";
+        var notifications = document.querySelectorAll(".m1");
+        notifications.forEach(notif => {
+            notif.classList.add("read");
+        });
+        var dots = document.querySelectorAll(".dot");
+        dots.forEach(dot => {
+            dot.style.display = "none";
+        });
+    }
+    </script>
+    <div class="section">
+        <div class="outer">
+            <div class="nav">
+                <div class="part1">
+                    <div class="notify">Notifications </div> <div id="number">3</div>
+                </div>
+                <div class="mark"><button onclick="markAllAsRead()">Mark all as read</button></div>
+            </div>
+            <div class="maincont">
+                <div class="m1">
+                    <div class="image">
+                        <img src="avatar-mark-webber.webp" alt="">
+                    </div>
+                    <div class="matter">
+                        <div class="cont1">
+                            <span><b> Mark Weber </b>reacted to your recent post <span><b> My friend's birthday!</b></span> </span><span class="dot"></span>
+                        </div>
+                        <div class="cont2">1m ago</div>
+                    </div>
+                </div>
+                <!-- Add more notification items here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

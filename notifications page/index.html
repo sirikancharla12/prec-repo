@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="section">
+        <div class="outer">
+            <div class="nav">
+                <div class="part1">
+                    <div class="notify">Notifications </div> <div id="number">3</div>
+                </div>
+                <div class="mark"><button onclick="markAllAsRead()">Mark all as read</button></div>
+                <div class="clearall"><button onclick="clearany()" >Clear All</button></div>
+                <!-- <div class="clearall"><button onclick="clearAllMessages()">Clear All</button></div> -->
+
+            </div>
+            <div class="maincont">
+                <div class="m1">
+                    <div class="image">
+                        <img src="avatar-mark-webber.webp" alt="">
+                    </div>
+                    <div class="matter">
+                        <div class="cont1">
+                            <span><b> Mark Weber </b> to your recent post <span><b> My friend's birthday!</b></span></span>
+                            <span id="dot"></span>
+                        </div>
+                        
+                        <div class="cont2">1m ago</div>
+                    </div>
+                </div>
+                
+                <div class="m1">
+                    <div class="image">
+                        <img src="avatar-angela-gray.webp" alt="">
+                    </div>
+                    <div class="matter">
+                        <div class="cont1">
+                           <span> <b>Angela Gray </b> followed you </span>
+                            <span id="dot">
+
+                            </span>
+                        </div>
+                        <div class="cont2">5m ago
+                        </div>
+                    </div>
+
+                </div>
+                <div class="m1">
+                    <div class="image">
+                        <img src="avatar-jacob-thompson.webp" alt="">
+                    </div>
+                    <div class="matter">
+                        <div class="cont1">
+                           <span><b>Jacob Thompson</b> joined your group <b> Chess Club</b></span> 
+                            <span id="dot">
+
+                            </span>
+                        </div>
+                        <div class="cont2">1day ago
+                        </div>
+                    </div>
+                </div>
+                <div class="m1 read">
+                    <div class="image">
+                        <img src="avatar-rizky-hasanuddin.webp" alt="">
+                    </div>
+                    <div class="matter" onclick="user()" >
+                        <div class="cont1">
+                            <span><b>Rizky Hasanuddin </b> sent you a private message</span>
+                        </div>
+                        <div class="cont2">5days ago
+                        </div>
+                        
+                    </div>
+                  
+
+                </div>
+                <div id="reply"  class="hidden">
+                    Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+                   </div>
+                   <div class="m1 position-relative read" >
+                    <div class="image">
+                        <img src="avatar-kimberly-smith.webp" alt="">
+                    </div>
+                    <div class="matter">
+                        <div class="cont1">
+                           <span><b>Kimberly Smith </b> commented on your picture</span>  
+                        </div>
+                        <div class="cont2">1week ago
+                        </div>
+                    </div>
+
+                </div><div class="m1 read">
+                    <div class="image">
+                        <img src="avatar-nathan-peterson.webp" alt="">
+                    </div>
+                    <div class="matter">
+                        <div class="cont1">
+                          
+                            <span> <b>Nathan Peterson</b> reacted to your recent post <span class="activity"><b> 5 end-game strategies to increase your win rate</b></span></span>
+                            
+                          </div>
+  
+                        
+                        <div class="cont2">2weeks ago
+                        </div>
+                    </div>
+                 
+
+                </div><div class="m1 read">
+                    <div class="image">
+                        <img src="avatar-anna-kim.webp" alt="">
+                    </div>
+                    <div class="matter">
+                        <div class="cont1">
+                           <span> <b>Anna Kim </b>left the group <span><b>Chess Club</b></span></span> 
+                        
+                        </div>
+                        <div class="cont2">2weeks ago
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+</body>
+
+</html>

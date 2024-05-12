@@ -1,0 +1,9 @@
+
+The HTTP and FS (File System) modules are core modules in Node.js that allow you to work with HTTP servers and the file system, respectively. Here's a brief overview of each:
+
+HTTP Module:
+
+The HTTP module in Node.js allows you to create HTTP servers and make HTTP requests.
+To create an HTTP server, you can use the http.createServer() method, passing a callback function that will be called each time a request is received.
+You can use methods like response.writeHead() and response.end() to send a response back to the client.
+The HTTP module also provides classes like http.Server and http.IncomingMessage that represent the server and incoming request objects, respectivel
