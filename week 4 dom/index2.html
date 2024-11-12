@@ -1,0 +1,35 @@
+<html>
+<script>
+// function populateDiv(){
+// const a = document.getElementById("firstNumber").value;
+// const b = document.getElementById("secondNumber").value;
+// // const element = document.getElementById("finalSum");
+
+// fetch("https://sum-server.100xdevs.com/sum?a=" + a + "&b=" + b)
+// .then(function(response){
+// response.text()
+// .then(function(ans){
+// document.getElementById("finalSum").innerHTML = ans;
+// })
+// })
+// }
+
+async function populateDiv(){
+const a = document.getElementById("principal").value;
+const b = document.getElementById("rate").value;
+const c = document.getElementById("time").value;
+
+const response = await fetch("https://sum-server.100xdevs.com/interest?principal=" + a + "&rate=" + b + "&time=" + c);
+const ans = await response.text();
+document.getElementById("interest").innerHTML = ans;
+}
+</script>
+<body>
+<input id="principal" type="text" placeholder="Principal"> <br><br>
+<input id="rate" type="text" placeholder="Rate"><br><br>
+<input id="time" type="text" placeholder="Time"><br><br>
+<button onclick="populateDiv()">Calculate Interest</button>
+<div id="interest"></div>
+
+</body>
+</html>
